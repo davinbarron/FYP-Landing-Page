@@ -1,0 +1,295 @@
+/* ── Reset & base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6f9;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* ── Header ── */
+header {
+  background: linear-gradient(135deg, #004c6c 0%, #003d56 60%, #002a3c 100%);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem 2.5rem;
+}
+
+header .profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  font-size: 2.4rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.4rem;
+}
+
+header .student-number {
+  font-size: 1rem;
+  opacity: 0.75;
+  letter-spacing: 0.08em;
+}
+
+/* ── Main container ── */
+main {
+  max-width: 860px;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* ── Cards ── */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 2rem;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #004c6c;
+  border-bottom: 3px solid #004c6c;
+  padding-bottom: 0.5rem;
+}
+
+.card p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0;
+}
+
+.features-list li {
+  padding: 0.6rem 0 0.6rem 1.8rem;
+  color: #555;
+  font-size: 0.95rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.features-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #004c6c;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* ── Poster ── */
+.poster-wrapper {
+  text-align: center;
+}
+
+.poster-wrapper img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid #dde3ec;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+/* ── Link buttons ── */
+.link-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: opacity 0.2s, transform 0.15s;
+}
+
+.btn:hover { opacity: 0.85; transform: translateY(-2px); }
+
+.btn-repo {
+  background: #24292e;
+  color: #fff;
+}
+
+.btn-demo {
+  background: #004c6c;
+  color: #fff;
+}
+
+/* ── Private note ── */
+.private-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-top: 1rem;
+  background: #fff8e0;
+  border-left: 4px solid #004c6c;
+  border-radius: 0 6px 6px 0;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  color: #004c6c;
+}
+
+.private-note i { margin-top: 2px; flex-shrink: 0; }
+
+/* ── Contact ── */
+.contact-icons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.contact-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  color: #004c6c;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: color 0.2s, transform 0.15s, padding 0.2s;
+  padding: 0.8rem;
+}
+
+.contact-link:hover { color: #fff8e0; background: #004c6c; border-radius: 8px; transform: translateY(-3px); }
+
+.contact-link i {
+  font-size: 2.2rem;
+}
+
+/* ── Collaboration Partners ── */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.partner-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: #f9fafb;
+  border: 2px solid #004c6c;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.partner-link:hover {
+  border-color: #004c6c;
+  background: #fff8e0;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 76, 108, 0.15);
+}
+
+.partner-logo {
+  height: 120px;
+  width: 120px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.partner-link:hover .partner-logo {
+  transform: scale(1.1);
+}
+
+.partner-link p {
+  font-weight: 600;
+  color: #004c6c;
+  text-align: center;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* ── Footer ── */
+footer {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  font-size: 0.85rem;
+  color: #666;
+  background: #f4f6f9;
+  border-top: 1px solid #e8edf2;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.college-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-text {
+  text-align: left;
+}
+
+.college-name {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #1a1a2e;
+  margin: 0 0 0.3rem 0;
+}
+
+.department {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0.2rem 0;
+}
+
+.course {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0.2rem 0;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: #999;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+}
