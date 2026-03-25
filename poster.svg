@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560">
+  <rect width="800" height="560" fill="#e8edf2" rx="8"/>
+  <rect x="30" y="30" width="740" height="500" fill="#fff" rx="6" stroke="#c5cdd8" stroke-width="1.5"/>
+  <!-- Header bar -->
+  <rect x="30" y="30" width="740" height="80" fill="#0f3460" rx="6"/>
+  <rect x="30" y="86" width="740" height="24" fill="#0f3460"/>
+  <text x="400" y="79" font-family="Arial,sans-serif" font-size="26" font-weight="bold" fill="#fff" text-anchor="middle">Final Year Project Poster</text>
+  <!-- Body placeholder lines -->
+  <text x="400" y="200" font-family="Arial,sans-serif" font-size="18" fill="#888" text-anchor="middle">[ Replace this file with your actual project poster ]</text>
+  <rect x="80" y="230" width="640" height="16" fill="#e0e0e0" rx="4"/>
+  <rect x="80" y="260" width="580" height="16" fill="#e0e0e0" rx="4"/>
+  <rect x="80" y="290" width="620" height="16" fill="#e0e0e0" rx="4"/>
+  <rect x="80" y="320" width="540" height="16" fill="#e0e0e0" rx="4"/>
+  <!-- Decorative boxes -->
+  <rect x="80"  y="370" width="180" height="110" fill="#dde3ec" rx="6"/>
+  <rect x="310" y="370" width="180" height="110" fill="#dde3ec" rx="6"/>
+  <rect x="540" y="370" width="180" height="110" fill="#dde3ec" rx="6"/>
+  <text x="170" y="430" font-family="Arial,sans-serif" font-size="13" fill="#999" text-anchor="middle">Figure 1</text>
+  <text x="400" y="430" font-family="Arial,sans-serif" font-size="13" fill="#999" text-anchor="middle">Figure 2</text>
+  <text x="630" y="430" font-family="Arial,sans-serif" font-size="13" fill="#999" text-anchor="middle">Figure 3</text>
+  <!-- Footer bar -->
+  <rect x="30" y="500" width="740" height="30" fill="#0f3460" rx="6"/>
+  <rect x="30" y="500" width="740" height="12" fill="#0f3460"/>
+  <text x="400" y="521" font-family="Arial,sans-serif" font-size="12" fill="#cdd5e0" text-anchor="middle">Davin Barron · C00XXXXXX · 2025</text>
+</svg>

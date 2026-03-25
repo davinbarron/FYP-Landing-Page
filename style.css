@@ -1,0 +1,156 @@
+/* ── Reset & base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6f9;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* ── Header ── */
+header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem 2.5rem;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.4rem;
+}
+
+header .student-number {
+  font-size: 1rem;
+  opacity: 0.75;
+  letter-spacing: 0.08em;
+}
+
+/* ── Main container ── */
+main {
+  max-width: 860px;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* ── Cards ── */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 2rem;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #0f3460;
+  border-bottom: 2px solid #e8edf2;
+  padding-bottom: 0.5rem;
+}
+
+.card p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* ── Poster ── */
+.poster-wrapper {
+  text-align: center;
+}
+
+.poster-wrapper img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid #dde3ec;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+/* ── Link buttons ── */
+.link-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: opacity 0.2s, transform 0.15s;
+}
+
+.btn:hover { opacity: 0.85; transform: translateY(-2px); }
+
+.btn-repo {
+  background: #24292e;
+  color: #fff;
+}
+
+.btn-demo {
+  background: #0f3460;
+  color: #fff;
+}
+
+/* ── Private note ── */
+.private-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-top: 1rem;
+  background: #fff8e1;
+  border-left: 4px solid #f9a825;
+  border-radius: 0 6px 6px 0;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  color: #6d4c00;
+}
+
+.private-note i { margin-top: 2px; flex-shrink: 0; }
+
+/* ── Contact ── */
+.contact-icons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.contact-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  color: #0f3460;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: color 0.2s, transform 0.15s;
+}
+
+.contact-link:hover { color: #e94560; transform: translateY(-3px); }
+
+.contact-link i {
+  font-size: 2.2rem;
+}
+
+/* ── Footer ── */
+footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.85rem;
+  color: #999;
+}
